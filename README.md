@@ -29,7 +29,7 @@ Este projeto é uma aplicação didática com fins educacionais e de demonstraç
 ##  Como Clonar o Repositório
 
 ```bash
-git clone [https://github.com/SeuUsuario/NovoRepositorio.git](https://github.com/Maducdornelles/WebSocket_Patient_Monitoring.git)
+git clone https://github.com/SeuUsuario/NovoRepositorio.git
 cd WebSocket_Patient_Monitoring
 ```
 
