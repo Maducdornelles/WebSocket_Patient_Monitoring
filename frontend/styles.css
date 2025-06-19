@@ -1,0 +1,42 @@
+body {
+  background-color: #111827;
+  font-family: 'Inter', sans-serif;
+}
+
+.alert-box {
+  animation: fadeInDown 0.5s ease forwards;
+  border-width: 3px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.normal {
+  border-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.05);
+}
+
+.moderado {
+  border-color: #facc15;
+  background-color: rgba(250, 204, 21, 0.05);
+}
+
+.critico {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.expanded {
+  grid-column: span 2;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monitoramento do Paciente</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Seu CSS personalizado -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+  <!-- Seu JS personalizado -->
+  <script src="app.js" defer></script>
+</head>
+<body class="min-h-screen p-6 text-white">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-5xl font-extrabold text-center mb-12 text-white">Monitoramento em Tempo Real do Paciente</h1>
+
+    <!-- GRÁFICO DE BATIMENTOS -->
+    <div class="bg-gray-800 rounded-3xl shadow-xl p-6 mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-white text-center">Batimentos Cardíacos (bpm)</h2>
+      <canvas id="heartChart" height="100"></canvas>
+    </div>
+
+    <!-- GRID DE ALERTAS -->
+    <div id="alert-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+    </div>
+  </div>
+</body>
+</html>
