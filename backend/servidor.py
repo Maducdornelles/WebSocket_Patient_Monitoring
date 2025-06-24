@@ -2,7 +2,7 @@ import asyncio
 import socket
 import websockets
 
-alertas = []  # Lista global de alertas
+alertas = []  
 clientes_websocket = set()
 
 async def notificar_clientes(alerta):
@@ -45,7 +45,7 @@ async def servidor_tcp():
 
 async def main():
     ws_server = await websockets.serve(websocket_handler, "localhost", 6789)
-    # roda ambos de forma concorrente
+    
     await asyncio.gather(
         servidor_tcp(),
         ws_server.wait_closed()
